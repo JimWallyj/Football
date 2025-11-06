@@ -16,19 +16,21 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .fontWeight(.light)
                 .foregroundStyle(.green)
-            HStack{
-                Image(systemName: "figure.american.football")
-                    .resizable()
-                    .scaledToFit()
-                    .foregroundStyle(.blue)
-                Image(systemName: "figure.australian.football")
-                    .resizable()
-                    .scaledToFit()
-                    .foregroundStyle(.indigo)
-                Image(systemName: "figure.soccer")
-                    .resizable()
-                    .scaledToFit()
-                    .foregroundStyle(.purple)
+            HStack {
+                HStack{
+                    Image(systemName: "figure.american.football")
+                        .resizable()
+                        .scaledToFit()
+                        .foregroundStyle(.blue)
+                    Image(systemName: "figure.australian.football")
+                        .resizable()
+                        .scaledToFit()
+                        .foregroundStyle(.indigo)
+                    Image(systemName: "figure.soccer")
+                        .resizable()
+                        .scaledToFit()
+                        .foregroundStyle(.purple)
+                }
             }
         }
         .padding()
